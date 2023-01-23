@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source ~/tmux-power/functions.sh
+source ~/tmux-power/functions.tmux
 
 update_tmux() {
     # The trailing slash is for avoiding conflicts with repos with 

@@ -4,7 +4,7 @@
 #===============================================================================
 
 
-source ~/tmux-power/functions.sh
+source ~/tmux-power/functions.tmux
 
 find_git_repo
 find_git_branch "$GIT_REPO"
