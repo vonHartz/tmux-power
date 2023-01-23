@@ -14,6 +14,8 @@ tmux_set() {
     tmux set-option -gq "$1" "$2"
 }
 
+user=$(whoami)
+
 # Options
 right_arrow_icon=$(tmux_get '@tmux_power_right_arrow_icon' '')
 left_arrow_icon=$(tmux_get '@tmux_power_left_arrow_icon' '')
