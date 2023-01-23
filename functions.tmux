@@ -1,5 +1,19 @@
 #!/usr/bin/env bash
 
+
+# $1: option
+# $2: default value
+tmux_get() {
+    local value="$(tmux show -gqv "$1")"
+    [ -n "$value" ] && echo "$value" || echo "$2"
+}
+
+# $1: option
+# $2: value
+tmux_set() {
+    tmux set-option -gq "$1" "$2"
+}
+
 # Options
 right_arrow_icon=$(tmux_get '@tmux_power_right_arrow_icon' '')
 left_arrow_icon=$(tmux_get '@tmux_power_left_arrow_icon' '')
@@ -112,20 +126,6 @@ find_git_stash() {
     else
         GIT_STASH=''
     fi
-}
-
-
-# $1: option
-# $2: default value
-tmux_get() {
-    local value="$(tmux show -gqv "$1")"
-    [ -n "$value" ] && echo "$value" || echo "$2"
-}
-
-# $1: option
-# $2: value
-tmux_set() {
-    tmux set-option -gq "$1" "$2"
 }
 
 build_ls() {
