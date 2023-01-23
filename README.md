@@ -26,7 +26,7 @@ set -g @plugin 'wfxr/tmux-power'
 
 Then, execute this line in a shell to add the script in the Bash initialization file (usually `.bashrc`, replace if needed):
 
-    echo "if [[ $TMUX ]]; then source ~/tmux-power/tmux-power-update-ls.sh; fi" >> ~/.bashrc
+    echo "if [[ \$TMUX ]]; then source ~/tmux-power/tmux-power-update-ls.sh; fi" >> ~/.bashrc
 
 Run `tmux`, `cd` to a Git repo, and enjoy :)
 
