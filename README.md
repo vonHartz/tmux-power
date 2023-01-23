@@ -17,11 +17,18 @@ Add the power theme to your `.tmux.conf`:
 
 ```
 # tmux power theme
-run-shell /home/jan/tmux-power/tmux-power.tmux 
+run-shell ~tmux-power/tmux-power.tmux
 set -g @tmux_power_theme 'forest'
+```
 
-# List of plugins
-set -g @plugin 'wfxr/tmux-power'
+If you haven't already, make tmux source your bashrc by adding the following to your `.profile` ([source](https://unix.stackexchange.com/questions/320465/new-tmux-sessions-do-not-source-bashrc-file)):
+```
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+    . "$HOME/.bashrc"
+    fi
+fi
 ```
 
 Then, execute this line in a shell to add the script in the Bash initialization file (usually `.bashrc`, replace if needed):
