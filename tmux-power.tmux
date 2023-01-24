@@ -6,6 +6,38 @@
 
 source ~/tmux-power/functions.tmux
 
+# short for Theme-Colour
+TC=$(tmux_get '@tmux_power_theme' 'gold')
+case $TC in
+    'gold' )
+        TC='#ffb86c'
+        ;;
+    'redwine' )
+        TC='#b34a47'
+        ;;
+    'moon' )
+        TC='#00abab'
+        ;;
+    'forest' )
+        TC='#228b22'
+        ;;
+    'violet' )
+        TC='#9370db'
+        ;;
+    'snow' )
+        TC='#fffafa'
+        ;;
+    'coral' )
+        TC='#ff7f50'
+        ;;
+    'sky' )
+        TC='#87ceeb'
+        ;;
+    'default' ) # Useful when your term changes colour dynamically (e.g. pywal)
+        TC='colour3'
+        ;;
+esac
+
 find_git_repo
 find_git_branch "$GIT_REPO"
 find_git_stash "$GIT_REPO"
