@@ -5,6 +5,12 @@ I hacked together [tmux-power](https://github.com/wfxr/tmux-power) and [tmux-git
 There's still some cleanup to do, before I could submit a PR to tmux-power.
 All credit to the original authors.
 
+## Prelimenaries
+
+You need a terminal font that inlcudes glyphs, such as Nerdfont.
+I recommand the Hack Mono or Ubuntu font.
+Both can be found here: https://www.nerdfonts.com/font-downloads
+
 ## Installation
 
 Clone this project in your home directory - currently needed due to an amateurish import of 'functions.sh'.
