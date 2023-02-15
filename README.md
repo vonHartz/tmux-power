@@ -10,7 +10,7 @@ All credit to the original authors.
 Clone this project in your home directory - currently needed due to an amateurish import of 'functions.sh'.
 
 ```
-git clone git://github.com/drmad/tmux-git.git
+git clone git@github.com:vonHartz/tmux-power.git
 ```
 
 Add the power theme to your `.tmux.conf`:
